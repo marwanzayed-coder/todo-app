@@ -1,0 +1,126 @@
+:root {
+  --main-color: #2d2c37;
+  --main-bg-color: #141417;
+  /*
+  #25242d
+  */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg-color);
+  color: #fff;
+}
+.card {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    width: 1170px;
+  }
+}
+
+.form {
+  margin-top: 50px;
+  background-color: #25242d;
+  padding: 30px 80px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.form .input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #555;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+.form .add {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .add i:not(.form .add span i) {
+  background-color: var(--main-color);
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form .add span i {
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+.form input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  left: -242px;
+  top: 8px;
+  cursor: pointer;
+}
+.form span {
+  position: relative;
+  overflow: hidden;
+}
+.tasks .task {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tasks .task i {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 5px;
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+.tasks .task.done i.fa-check {
+  background-color: #4caf50;
+}
+.tasks .task .text {
+  display: flex;
+  flex-direction: column;
+}
+.tasks .task.done .text span:nth-child(1) {
+  text-decoration: line-through;
+  margin-bottom: 0 0 5px;
+}
+.tasks .task .text span:nth-child(1) {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.icon i {
+  position: absolute;
+  bottom: 20px;
+  background-color: var(--main-color);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
