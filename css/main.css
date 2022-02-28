@@ -83,7 +83,7 @@ body {
   overflow: hidden;
 }
 .tasks .task {
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   background-color: var(--main-color);
   display: flex;
@@ -108,11 +108,10 @@ body {
   flex-direction: column;
 }
 .tasks .task.done .text span:nth-child(1) {
-  text-decoration: line-through;
-  margin-bottom: 0 0 5px;
+  text-decoration: line-through 3px;
 }
 .tasks .task .text span:nth-child(1) {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: 700;
 }
 .icon i {
