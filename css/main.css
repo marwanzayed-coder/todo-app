@@ -1,9 +1,6 @@
 :root {
   --main-color: #2d2c37;
   --main-bg-color: #141417;
-  /*
-  #25242d
-  */
 }
 * {
   margin: 0;
@@ -109,6 +106,7 @@ body {
 }
 .tasks .task.done .text span:nth-child(1) {
   text-decoration: line-through 3px;
+  opacity: 50%;
 }
 .tasks .task .text span:nth-child(1) {
   margin-bottom: 10px;
